@@ -14,7 +14,8 @@ const Home = () => {
 
     return (
             <div className ="home-design">
-                <h1 className ="top-header">Sports Mania: {leagues.length}</h1>
+                <h1 className ="top-header">Sports Mania </h1>
+                {/* <h2>Number of leagues: {leagues.length} </h2> */}
                <div className="league-design">
                {
                     leagues.map(lg => <League league = {lg}></League>)

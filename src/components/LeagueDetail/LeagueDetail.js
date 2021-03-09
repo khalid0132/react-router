@@ -25,7 +25,7 @@ const LeagueDetail = () => {
     return (
         <div>
             <Container>
-            <img className="top-header" src={strBanner} alt=""/>
+            <img src={strBanner} alt=""/>
             
                 <Row className= "club-history">
                     <Col>
