@@ -19,7 +19,7 @@ const Home = () => {
                 {/* <h2>Number of leagues: {leagues.length} </h2> */}
                <div className="league-design">
                {
-                    leagues.map(league => <League league = {league}></League>)
+                    leagues.map(league => <League league = {league} key={league.idLeague}></League>)
                 }
                </div>
             </div>

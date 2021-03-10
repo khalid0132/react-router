@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     
+    /* justify-content: center;   */
 }
 .top-header{
     padding: 60px 0;
@@ -12,6 +13,7 @@
     background: url('banner.jpg') no-repeat center/cover;
     position: relative;
     z-index: 1;
+
 }
 .top-header::after{
     position: absolute;
@@ -24,3 +26,20 @@
     opacity: .5;
     z-index: -1;
 }
+
+/* Responsive */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .league-design {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .league-design {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+  }
