@@ -32,7 +32,7 @@ const LeagueDetail = () => {
             {/* <img className="top-header" src={strBanner} alt=""/> */}
             <img src={strBanner} alt=""/>
 
-                <Row className= "club-history ml-5 mr-5 bg-danger">
+                <Row className= "club-history ml-5 mr-5 mt-2 rounded bg-danger">
                     <Col className="text-left">
                         <h4>{strLeague} </h4>
                         <p><FontAwesomeIcon icon={faMapMarker}/> Founded: {dateFirstEvent}</p>
@@ -47,7 +47,7 @@ const LeagueDetail = () => {
                     </Col>
                 </Row>
                 <Row className="mt-5">
-                    <Col className="ml-5 mr-5">
+                    <Col className="ml-5 mr-5 text-left">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium vel sequi sint similique laborum fugiat numquam, esse eius. Aliquid corporis debitis et officia, ex tempora iste nam vitae! Veniam quae molestias doloremque exercitationem modi, minima ad iure! Blanditiis iste quidem est aspernatur odio. Enim.
                         
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic sit quidem. Quisquam illo, molestiae pariatur quod impedit magnam dolores ut eveniet, illum distinctio totam quidem numquam! Pariatur voluptates repellat temporibus recusandae unde doloribus perspiciatis expedita corrupti at, neque debitis rerum laudantium quasi consequuntur esse, sunt aperiam reiciendis ipsam in. Repellat, beatae. Mollitia itaque illum tempora voluptatum earum totam voluptate optio iusto ab alias omnis esse debitis nesciunt recusandae, voluptatem corrupti adipisci laboriosam possimus incidunt perferendis distinctio! Cupiditate consectetur tempore aut, voluptatem rerum dolores nemo quo numquam similique ipsum error commodi ex nesciunt inventore dolore rem vel! Tempora, autem consequuntur?
