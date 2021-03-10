@@ -4,7 +4,6 @@
 .league-design{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    
     /* justify-content: center;   */
 }
 .top-header{
@@ -13,7 +12,6 @@
     background: url('banner.jpg') no-repeat center/cover;
     position: relative;
     z-index: 1;
-
 }
 .top-header::after{
     position: absolute;
@@ -27,7 +25,7 @@
     z-index: -1;
 }
 
-/* Responsive */
+/* Responsiveness */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .league-design {
       display: flex;

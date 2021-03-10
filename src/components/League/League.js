@@ -8,7 +8,6 @@ import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
 
 const League = (props) => {
-
     const [leagues, setLeagues] = useState([])
     const {strLeague, strSport, idLeague} = props.league;
     const history = useHistory();

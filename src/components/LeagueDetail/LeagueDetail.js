@@ -13,7 +13,6 @@ import femaleImg from './female.png';
 
 const LeagueDetail = () => {
     const {idLeague} = useParams();
-    
     const [leagueDetail, setLeagueDetail] = useState([]);
     useEffect( () => {
         const url = `https://www.thesportsdb.com/api/v1/json/1/lookupleague.php?id=${idLeague}`;
@@ -41,9 +40,6 @@ const LeagueDetail = () => {
        <div className="bg-dark">
            <h1 className ="top-header"><img className="image-responsive" src={strBadge} alt=""/></h1>
         <Container >
-        {/* <Row>
-                <Col md='12'><img className="image-responsive top-header" src={strBadge} alt=""/></Col>
-            </Row> */}
             <Row className="justify-content-md-center mt-2 mr-4 text-left rounded bg-success text-white">
                 <Col md="8" className=" pt-3 league-detail">
                         <h4>{strLeague} </h4>
@@ -56,21 +52,19 @@ const LeagueDetail = () => {
                     <p><img className="league-detail" style={{width: '300px'}} src={imgUrl} alt=""/></p> 
                 </Col>
             </Row>
-                <Row className="mt-5">
-                    <Col className="text-left text-white">
+            <Row className="mt-5">
+                <Col className="text-left text-white">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic sit quidem. Quisquam illo, molestiae pariatur quod impedit magnam dolores ut eveniet, illum distinctio totam quidem numquam! Pariatur voluptates repellat temporibus recusandae unde doloribus perspiciatis expedita corrupti at, neque debitis rerum laudantium quasi consequuntur esse, sunt aperiam reiciendis ipsam in. Repellat, beatae. Mollitia itaque illum tempora voluptatum earum totam voluptate optio iusto ab alias omnis esse debitis nesciunt recusandae, voluptatem corrupti adipisci laboriosam possimus incidunt perferendis distinctio! Cupiditate consectetur tempore aut, voluptatem rerum dolores nemo quo numquam similique ipsum error commodi ex nesciunt inventore dolore rem vel! Tempora, autem consequuntur?
-                    </Col>
-                </Row>
-                <Row className="pt-5 pb-1">
-                    <Col>
-                        
-                       <a href="https://www.facebook.com/groups/completewebdevelopment3/?multi_permalinks=495133901506539"> <span><FontAwesomeIcon icon={faFacebook}/></span></a>
-                       <a href="https://twitter.com/jhankarmahbub"> <span><FontAwesomeIcon icon={faTwitter}/></span></a>
-                       <a href="https://www.youtube.com/channel/UCs2cWnd7Sb1eXT-50oMOxlw"> <span><FontAwesomeIcon icon={faYoutube}/></span></a>
-                       <a href="https://www.instagram.com/jhankarmahbub/"> <span><FontAwesomeIcon icon={faInstagram}/></span></a>
-                  
-                    </Col>
-                </Row>
+                </Col>
+            </Row>
+            <Row className="pt-5 pb-1">
+                <Col>
+                    <a href="https://www.facebook.com/groups/completewebdevelopment3/?multi_permalinks=495133901506539"> <span><FontAwesomeIcon icon={faFacebook}/></span></a>
+                    <a href="https://twitter.com/jhankarmahbub"> <span><FontAwesomeIcon icon={faTwitter}/></span></a>
+                    <a href="https://www.youtube.com/channel/UCs2cWnd7Sb1eXT-50oMOxlw"> <span><FontAwesomeIcon icon={faYoutube}/></span></a>
+                    <a href="https://www.instagram.com/jhankarmahbub/"> <span><FontAwesomeIcon icon={faInstagram}/></span></a>
+                </Col>
+            </Row>
         </Container>
        </div>
     );
