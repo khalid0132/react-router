@@ -11,3 +11,12 @@
     color: white;
  
 }
+span{
+    margin: 5px;
+    font-size: 30px;
+    color: red;
+    transition: all linear .5s;
+}
+span:hover{
+    color: black;
+}

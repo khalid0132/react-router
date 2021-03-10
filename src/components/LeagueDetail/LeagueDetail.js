@@ -4,13 +4,15 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFlag, faMapMarker, faFutbol, faMars } from '@fortawesome/free-solid-svg-icons';
+import {faFacebook, faTwitter, faYoutube, faInstagram} from '@fortawesome/free-brands-svg-icons';
 // import Container from 'react-bootstrap/Container';
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LeagueDetail.css';
-const LeagueDetail = (props) => {
-    const gender = props.gender;
-    const image = gender? <p>Male image</p> : <p>Female image</p>;
+const LeagueDetail = () => {
+    // const gender = props.gender;
+    const {gender} = useParams();
+    const image = gender === true ? <p>Male image</p> : <p>Female image</p>;
     
     const {idLeague} = useParams();
     const [leagueDetail, setLeagueDetail] = useState([]);
@@ -30,8 +32,8 @@ const LeagueDetail = (props) => {
             {/* <img className="top-header" src={strBanner} alt=""/> */}
             <img src={strBanner} alt=""/>
 
-                <Row className= "club-history">
-                    <Col>
+                <Row className= "club-history ml-5 mr-5 bg-danger">
+                    <Col className="text-left">
                         <h4>{strLeague} </h4>
                         <p><FontAwesomeIcon icon={faMapMarker}/> Founded: {dateFirstEvent}</p>
                         <p><FontAwesomeIcon icon={faFlag}/> Country: {strCountry}</p>
@@ -40,20 +42,25 @@ const LeagueDetail = (props) => {
                     </Col>
                     <Col>
                         {image}
+                        <img src="male.png" alt=""/>
+                        <img src="female.png" alt=""/>
                     </Col>
                 </Row>
-                <Row>
-                    <Col>
+                <Row className="mt-5">
+                    <Col className="ml-5 mr-5">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut laudantium vel sequi sint similique laborum fugiat numquam, esse eius. Aliquid corporis debitis et officia, ex tempora iste nam vitae! Veniam quae molestias doloremque exercitationem modi, minima ad iure! Blanditiis iste quidem est aspernatur odio. Enim.
+                        
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic sit quidem. Quisquam illo, molestiae pariatur quod impedit magnam dolores ut eveniet, illum distinctio totam quidem numquam! Pariatur voluptates repellat temporibus recusandae unde doloribus perspiciatis expedita corrupti at, neque debitis rerum laudantium quasi consequuntur esse, sunt aperiam reiciendis ipsam in. Repellat, beatae. Mollitia itaque illum tempora voluptatum earum totam voluptate optio iusto ab alias omnis esse debitis nesciunt recusandae, voluptatem corrupti adipisci laboriosam possimus incidunt perferendis distinctio! Cupiditate consectetur tempore aut, voluptatem rerum dolores nemo quo numquam similique ipsum error commodi ex nesciunt inventore dolore rem vel! Tempora, autem consequuntur?
                     </Col>
                 </Row>
-                <Row>
+                <Row className="pt-5">
                     <Col>
                         
-                        <span><FontAwesomeIcon icon={faMapMarker}/></span>
-                        <span><FontAwesomeIcon icon={faMapMarker}/></span>
-                        <span><FontAwesomeIcon icon={faMapMarker}/></span>
+                       <a href="https://www.facebook.com/groups/completewebdevelopment3/?multi_permalinks=495133901506539"> <span><FontAwesomeIcon icon={faFacebook}/></span></a>
+                       <a href="https://twitter.com/jhankarmahbub"> <span><FontAwesomeIcon icon={faTwitter}/></span></a>
+                       <a href="https://www.youtube.com/channel/UCs2cWnd7Sb1eXT-50oMOxlw"> <span><FontAwesomeIcon icon={faYoutube}/></span></a>
+                       <a href="https://www.instagram.com/jhankarmahbub/"> <span><FontAwesomeIcon icon={faInstagram}/></span></a>
+                  
                     </Col>
                 </Row>
             </Container>

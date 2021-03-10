@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
 import { useEffect } from 'react';
-import LeagueDetail from '../LeagueDetail/LeagueDetail';
+// import LeagueDetail from '../LeagueDetail/LeagueDetail';
 // import { Container } from 'react-bootstrap';
 
 const League = (props) => {
@@ -38,7 +38,7 @@ const League = (props) => {
             <h3> {strLeague} </h3>
             <p> <small>Sports Type: {strSport}</small></p>
             <Button onClick= {()=> handleClick(idLeague) && setGender(!gender)} variant="primary">Explore <FontAwesomeIcon icon={faArrowRight} /></Button>
-            <LeagueDetail gender ={gender}></LeagueDetail>
+            {/* <LeagueDetail gender ={gender}></LeagueDetail> */}
         </div>
     );
 };
