@@ -11,6 +11,12 @@
     /* color: white; */
  
 }
+.league-info{
+    /* width: 800px;
+    height: 200px;
+    margin: 0 auto; */
+
+}
 span{
     margin: 5px;
     font-size: 30px;
@@ -18,7 +24,10 @@ span{
     transition: all linear .5s;
 }
 span:hover{
-    color: black;
+    color: blue;
+}
+.image-responsive{
+    width: 100px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -28,10 +37,16 @@ span:hover{
       align-items: center;
     }
     .image-responsive{
-        width: 100%;
+        width: 100px;
     }
     .league-detail{
-        /* text-align: center; */
+        text-align: center;
         margin: 0 auto;
     }
+    /* .league-info{
+        width: 800px;
+        height: 400px;
+        margin: 0 auto;
+    
+    } */
   }
