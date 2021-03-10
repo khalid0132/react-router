@@ -38,25 +38,30 @@ const LeagueDetail = () => {
     // }
     
     return (
-        <Container>
-            <img className="image-responsive" src={strBanner} alt=""/>
-            <Row className="justify-content-md-center text-left rounded bg-success text-white">
-                <Col md="8" className="w-50 ">
+       <div className="bg-dark">
+            <Container>
+            <Row>
+                <Col><img className="image-responsive" src={strBanner} alt=""/></Col>
+            </Row>
+        </Container>
+        <Container >
+            <Row className="justify-content-md-center mt-2 text-left rounded bg-success text-white">
+                <Col md="8" className="w-25 league-detail">
                         <h4>{strLeague} </h4>
                         <p><FontAwesomeIcon icon={faMapMarker}/> Founded: {dateFirstEvent}</p>
                         <p><FontAwesomeIcon icon={faFlag}/> Country: {strCountry}</p>
                         <p><FontAwesomeIcon icon={faFutbol}/> Sport Type: {strSport}</p>
                         <p><FontAwesomeIcon icon={faMars}/> Gender: {strGender}</p>
                 </Col>
-                <Col md="4" className="pt-4">
+                <Col md="4" className="pt-4 league-detail">
                     <p><img style={{width: '300px'}} src={imgUrl} alt=""/></p> 
                 </Col>
             </Row>
                 <Row className="mt-5">
-                    <Col className="ml-5 mr-5 text-left">
+                    <Col className="ml-5 mr-5 text-left text-white">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed hic sit quidem. Quisquam illo, molestiae pariatur quod impedit magnam dolores ut eveniet, illum distinctio totam quidem numquam! Pariatur voluptates repellat temporibus recusandae unde doloribus perspiciatis expedita corrupti at, neque debitis rerum laudantium quasi consequuntur esse, sunt aperiam reiciendis ipsam in. Repellat, beatae. Mollitia itaque illum tempora voluptatum earum totam voluptate optio iusto ab alias omnis esse debitis nesciunt recusandae, voluptatem corrupti adipisci laboriosam possimus incidunt perferendis distinctio! Cupiditate consectetur tempore aut, voluptatem rerum dolores nemo quo numquam similique ipsum error commodi ex nesciunt inventore dolore rem vel! Tempora, autem consequuntur?
                     </Col>
-                    </Row>
+                </Row>
                 <Row className="pt-5">
                     <Col>
                         
@@ -68,6 +73,7 @@ const LeagueDetail = () => {
                     </Col>
                 </Row>
         </Container>
+       </div>
     );
 };
 export default LeagueDetail;

@@ -30,4 +30,8 @@ span:hover{
     .image-responsive{
         width: 100%;
     }
+    .league-detail{
+        /* text-align: center; */
+        margin: 0 auto;
+    }
   }
