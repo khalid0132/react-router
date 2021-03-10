@@ -8,8 +8,10 @@ import { faFlag, faMapMarker, faFutbol, faMars } from '@fortawesome/free-solid-s
 import { Container, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './LeagueDetail.css';
-
-const LeagueDetail = () => {
+const LeagueDetail = (props) => {
+    const gender = props.gender;
+    const image = gender? <p>Male image</p> : <p>Female image</p>;
+    
     const {idLeague} = useParams();
     const [leagueDetail, setLeagueDetail] = useState([]);
     useEffect( () => {
@@ -25,8 +27,9 @@ const LeagueDetail = () => {
     return (
         <div>
             <Container>
+            {/* <img className="top-header" src={strBanner} alt=""/> */}
             <img src={strBanner} alt=""/>
-            
+
                 <Row className= "club-history">
                     <Col>
                         <h4>{strLeague} </h4>
@@ -36,7 +39,7 @@ const LeagueDetail = () => {
                         <p><FontAwesomeIcon icon={faMars}/> Gender: {strGender}</p>
                     </Col>
                     <Col>
-                        
+                        {image}
                     </Col>
                 </Row>
                 <Row>
@@ -54,10 +57,7 @@ const LeagueDetail = () => {
                     </Col>
                 </Row>
             </Container>
-
-
         </div>
     );
 };
-
 export default LeagueDetail;

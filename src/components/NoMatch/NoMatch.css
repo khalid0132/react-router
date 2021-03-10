@@ -1,0 +1,9 @@
+.not-found{
+    padding: 20px;
+    box-shadow: 5px 5px 20px red;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: red;
+    border-radius: 10px;
+}

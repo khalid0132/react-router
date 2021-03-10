@@ -1,10 +1,11 @@
 import React from 'react';
+import './NoMatch.css';
 
 const NoMatch = () => {
     return (
-        <div>
-            <h1>404 Page not found</h1>
-            <h3>Please go back and try again later, Thanks!</h3>
+        <div className = "not-found">
+            <h1>404-felsidan, hittas inte</h1>
+            <h3>Vänligen gå tillbaka och försök igen senare, tack!</h3>
         </div>
     );
 };

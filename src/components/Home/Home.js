@@ -3,6 +3,7 @@ import League from '../League/League';
 import './Home.css';
 
 
+
 const Home = () => {
     const [leagues, setLeagues] = useState([])
     useEffect(() =>{
@@ -18,7 +19,7 @@ const Home = () => {
                 {/* <h2>Number of leagues: {leagues.length} </h2> */}
                <div className="league-design">
                {
-                    leagues.map(lg => <League league = {lg}></League>)
+                    leagues.map(league => <League league = {league}></League>)
                 }
                </div>
             </div>
